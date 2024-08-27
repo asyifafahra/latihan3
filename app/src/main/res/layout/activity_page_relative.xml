@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PageRelativeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Header TextView aligned to the top center -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+
+
+        <!-- Button aligned below the header -->
+
+
+        <!-- Another Button aligned to the right of Button 1 -->
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="385dp"
+            android:layout_height="40dp"
+            android:gravity="top"
+            android:hint="Reminder"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="42dp"
+            android:text="LEFT" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/button1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="169dp"
+            android:layout_toRightOf="@id/button1"
+            android:text="RIGHT" />
+
+
+        <!-- Footer TextView aligned to the bottom center -->
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="132dp"
+            android:layout_marginRight="100dp"
+            android:text="Button Bottom" />
+
+        <TextView
+            android:id="@+id/footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Footer"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
